@@ -1,0 +1,49 @@
+services:
+  db:
+    image: mysql:8.1.0
+    container_name: tienda_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: ripperdoc
+    ports:
+      - "3306:3306"
+    volumes:
+      - tienda_db_data:/var/lib/mysql
+    networks:
+      - ripperdoc_net
+
+  web:
+    build: .
+    container_name: tienda_web
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - ripperdoc_net
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: tienda_pma
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: rootpassword
+      UPLOAD_LIMIT: 50M
+    depends_on:
+      - db
+    networks:
+      - ripperdoc_net
+
+volumes:
+  tienda_db_data:
+
+networks:
+  ripperdoc_net:
+    driver: bridge
