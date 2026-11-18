@@ -6,7 +6,7 @@ $paginaActual = basename($_SERVER['PHP_SELF']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RipperDeck TCG - Tienda en Línea</title>
+    <title>RipperDoc TCG</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@ $paginaActual = basename($_SERVER['PHP_SELF']);
     <div class="container">
         <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.php">
             <i class="bi bi-layers-half text-info fs-4"></i>
-            <span>RipperDeck <span class="text-info">TCG</span></span>
+            <span>Ripper<span class="text-info">Doc</span> TCG</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
             <span class="navbar-toggler-icon"></span>
