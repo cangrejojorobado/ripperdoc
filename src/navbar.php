@@ -26,9 +26,13 @@ $paginaActual = basename($_SERVER['PHP_SELF']);
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link <?= $paginaActual === 'index.php' ? 'active fw-semibold text-info' : '' ?>" href="index.php">
-                        <i class="bi bi-grid-fill me-1"></i>Catálogo
+                        <i class="bi bi-grid-fill me-1"></i>Inicio
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= $paginaActual === 'catalogo.php' ? 'active fw-semibold text-info' : '' ?>" href="catalogo.php">
+                        <i class="bi bi-box-seam me-1"></i>Catalogo
+                    </a>
                 <li class="nav-item">
                     <a class="nav-link <?= $paginaActual === 'perfil.php' ? 'active fw-semibold text-info' : '' ?>" href="perfil.php">
                         <i class="bi bi-person-badge me-1"></i>Mi Perfil

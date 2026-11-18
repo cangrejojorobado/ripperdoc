@@ -17,7 +17,7 @@ $resultado_novedades = $conn->query($sql_novedades);
                     Encuentra Play Booster Boxes, Starter Decks, cartas sueltas, accesorios de protección, y mas de tus productos favoritos.
                 </p>
                 <div class="d-flex gap-2">
-                    <a href="#catalogo" class="btn btn-info text-dark fw-bold btn-lg">Explorar Catalogo</a>
+                    <a href="catalogo.php" class="btn btn-info text-dark fw-bold btn-lg">Explorar Catalogo</a>
                 </div>
             </div>
             <div class="col-lg-4 d-none d-lg-block text-center">
