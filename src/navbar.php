@@ -33,6 +33,7 @@ $paginaActual = basename($_SERVER['PHP_SELF']);
                     <a class="nav-link <?= $paginaActual === 'catalogo.php' ? 'active fw-semibold text-info' : '' ?>" href="catalogo.php">
                         <i class="bi bi-box-seam me-1"></i>Catalogo
                     </a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link <?= $paginaActual === 'perfil.php' ? 'active fw-semibold text-info' : '' ?>" href="perfil.php">
                         <i class="bi bi-person-badge me-1"></i>Mi Perfil
